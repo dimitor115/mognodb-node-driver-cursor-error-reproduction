@@ -1,0 +1,14 @@
+{
+  "name": "cursor-reproduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.3.1"
+  },
+  "devDependencies": {
+    "serverless": "^3.1.0"
+  }
+}

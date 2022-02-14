@@ -1,0 +1,21 @@
+service: cursor-reproduction
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  stage: sand
+  region: eu-west-1
+  runtime: nodejs14.x
+  logRetentionInDays: 30
+  timeout: 45
+  versionFunctions: false
+  environment:
+    DBURL: ""
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - schedule: rate(25 minutes)
+      - schedule: rate(15 minutes)
+      - schedule: rate(3 minutes)
