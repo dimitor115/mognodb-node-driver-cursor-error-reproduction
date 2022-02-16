@@ -1,5 +1,7 @@
 ## Mongo db node driver cursor error reproduction 
 ### Steps to reproduce error
+(This repo is using serverless framework to simplify the lambda deployment process)
+
 1. Run `yarn` in root to install dependencies
 2. Export connection string to your Atlas database in DBURL environment variable
 3. Run `node setup.js` which will fill the database with example documents
